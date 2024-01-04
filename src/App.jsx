@@ -25,7 +25,7 @@ function App() {
           makeDefault
           minAzimuthAngle={-Math.PI / 9}
           maxAzimuthAngle={Math.PI / 9}
-          minPolarAngle={Math.PI / 2}
+          minPolarAngle={Math.PI / 2.5}
           maxPolarAngle={Math.PI / 2}
         />
         <Sky />
