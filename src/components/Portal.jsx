@@ -21,11 +21,13 @@ function Portal({ name, title, width = 6, height = 10, children, ...props }) {
           <roundedPlaneGeometry args={[width, height, 0.1]} />
           <MeshPortalMaterial ref={portal} side={THREE.DoubleSide}>
             <Text
-              color="LightPink"
+              color="DeepPink"
               fontSize={0.7}
               letterSpacing={-0.015}
               font="https://fonts.gstatic.com/s/raleway/v14/1Ptrg8zYS_SKggPNwIYqWqZPBQ.ttf"
               anchorY="top"
+              outlineColor="DeepPink"
+              outlineWidth={0.01}
               anchorX="left"
               lineHeight={0.8}
               position={[-2.7, 4.7, 0.01]}
@@ -34,7 +36,7 @@ function Portal({ name, title, width = 6, height = 10, children, ...props }) {
             </Text>
 
             <Text
-              color="LightPink"
+              color="DeepPink"
               fontSize={0.3}
               letterSpacing={-0.015}
               font="https://fonts.gstatic.com/s/raleway/v14/1Ptrg8zYS_SKggPNwIYqWqZPBQ.ttf"
@@ -48,7 +50,7 @@ function Portal({ name, title, width = 6, height = 10, children, ...props }) {
               {title}
             </Text>
             <Text
-              color="LightPink"
+              color="DeepPink"
               fontSize={0.5}
               letterSpacing={-0.015}
               font="https://fonts.gstatic.com/s/raleway/v14/1Ptrg8zYS_SKggPNwIYqWqZPBQ.ttf"
@@ -63,7 +65,7 @@ function Portal({ name, title, width = 6, height = 10, children, ...props }) {
               Curriculum Vitae
             </Text>
             <Text
-              color="LightPink"
+              color="DeepPink"
               fontSize={0.5}
               letterSpacing={-0.015}
               font="https://fonts.gstatic.com/s/raleway/v14/1Ptrg8zYS_SKggPNwIYqWqZPBQ.ttf"
@@ -78,7 +80,7 @@ function Portal({ name, title, width = 6, height = 10, children, ...props }) {
               GitHub
             </Text>
             <Text
-              color="LightPink"
+              color="DeepPink"
               fontSize={0.5}
               letterSpacing={-0.015}
               font="https://fonts.gstatic.com/s/raleway/v14/1Ptrg8zYS_SKggPNwIYqWqZPBQ.ttf"
@@ -93,7 +95,7 @@ function Portal({ name, title, width = 6, height = 10, children, ...props }) {
               Twitter
             </Text>
             <Text
-              color="LightPink"
+              color="DeepPink"
               fontSize={0.5}
               letterSpacing={-0.015}
               font="https://fonts.gstatic.com/s/raleway/v14/1Ptrg8zYS_SKggPNwIYqWqZPBQ.ttf"
