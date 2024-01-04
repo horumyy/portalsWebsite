@@ -21,7 +21,6 @@ function App() {
           enablePan={false}
           dampingFactor={0.1}
           enableDamping={true}
-          enableZoom={false}
           makeDefault
           minAzimuthAngle={-Math.PI / 9}
           maxAzimuthAngle={Math.PI / 9}
