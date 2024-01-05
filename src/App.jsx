@@ -30,7 +30,7 @@ function App() {
         <Sky />
 
         <ambientLight intensity={10} />
-        <Portal name="Jorge Plasencia" title="Software Engineer">
+        <Portal>
           <group>
             <ambientLight intensity={10} />
             <primitive object={skyBoxModel.scene} />

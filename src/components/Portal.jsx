@@ -6,7 +6,7 @@ import { geometry } from "maath";
 
 extend(geometry);
 
-function Portal({ name, title, width = 6, height = 10, children, ...props }) {
+function Portal({ width = 6, height = 10, children, ...props }) {
   const portal = useRef();
   const [hovered, setHovered] = useState(false);
 
@@ -32,7 +32,7 @@ function Portal({ name, title, width = 6, height = 10, children, ...props }) {
               lineHeight={0.8}
               position={[-2.7, 4.7, 0.01]}
             >
-              {name}
+              Jorge Plasencia
             </Text>
 
             <Text
@@ -44,10 +44,8 @@ function Portal({ name, title, width = 6, height = 10, children, ...props }) {
               anchorX="left"
               lineHeight={0.8}
               position={[-2.7, 3.9, 0.01]}
-              onPointerOver={() => setHovered(true)}
-              onPointerOut={() => setHovered(false)}
             >
-              {title}
+              Software Engineer
             </Text>
             <Text
               color="DeepPink"
