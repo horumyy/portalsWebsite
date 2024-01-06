@@ -88,9 +88,9 @@ function Portal({ width = 6, height = 10, children, ...props }) {
               position={[-2.7, 1.7, 0.01]}
               onPointerOver={() => setHovered(true)}
               onPointerOut={() => setHovered(false)}
-              onClick={() => window.open("https://twitter.com/JorgePAJ")}
+              onClick={() => window.open("https://www.linkedin.com/in/jorgeplasenciaa/")}
             >
-              Twitter
+              LinkedIn
             </Text>
             <Text
               color="DeepPink"
