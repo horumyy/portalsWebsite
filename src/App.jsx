@@ -1,6 +1,6 @@
 import { Canvas } from "@react-three/fiber";
 import Portal from "./components/Portal";
-import { Float, Text, OrbitControls, Sky } from "@react-three/drei";
+import { Float, Text, OrbitControls, Sky, Center } from "@react-three/drei";
 import { useLoader } from "@react-three/fiber";
 import { GLTFLoader } from "three/examples/jsm/loaders/GLTFLoader";
 import { Girl } from "./components/Girl";
@@ -30,15 +30,17 @@ function App() {
         <Sky />
 
         <ambientLight intensity={10} />
-        <Portal>
-          <group>
-            <ambientLight intensity={10} />
-            <primitive object={skyBoxModel.scene} />
+        <Center>
+          <Portal>
+            <group>
+              <ambientLight intensity={10} />
+              <primitive object={skyBoxModel.scene} />
 
-            <Girl scale={1.5} position={[0, -6, 0.35]} />
-          </group>
-        </Portal>
-        <Girl clip scale={1.5} position={[0, -6, -0.35]} />
+              <Girl scale={1.5} position={[0, -6, 0.35]} />
+            </group>
+          </Portal>
+          <Girl clip scale={1.5} position={[0, -6, -0.35]} />
+        </Center>
       </Canvas>
     </>
   );
