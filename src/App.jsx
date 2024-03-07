@@ -7,7 +7,6 @@ import { Girl } from "./components/Girl";
 
 function App() {
   const skyBoxModel = useLoader(GLTFLoader, "/skybox.glb");
-  const cityScapeModel = useLoader(GLTFLoader, "/citySkyBox.glb");
 
   return (
     <>
@@ -22,8 +21,8 @@ function App() {
           dampingFactor={0.1}
           enableDamping={true}
           makeDefault
-          minAzimuthAngle={-Math.PI / 9}
-          maxAzimuthAngle={Math.PI / 9}
+          minAzimuthAngle={-Math.PI / 2}
+          maxAzimuthAngle={Math.PI / 2}
           minPolarAngle={Math.PI / 2.5}
           maxPolarAngle={Math.PI / 2}
         />
@@ -31,15 +30,17 @@ function App() {
 
         <ambientLight intensity={10} />
         <Center>
-          <Portal>
-            <group>
-              <ambientLight intensity={10} />
-              <primitive object={skyBoxModel.scene} />
+          <Float>
+            <Portal position={[0, -1, 0]}>
+              <group>
+                <ambientLight intensity={10} />
+                <primitive object={skyBoxModel.scene} />
 
-              <Girl scale={1.5} position={[0, -6, 0.35]} />
-            </group>
-          </Portal>
-          <Girl clip scale={1.5} position={[0, -6, -0.35]} />
+                <Girl scale={1.5} position={[0, -6, 0.35]} />
+              </group>
+            </Portal>
+            <Girl clip scale={1.5} position={[0, -6, -0.35]} />
+          </Float>
         </Center>
       </Canvas>
     </>
