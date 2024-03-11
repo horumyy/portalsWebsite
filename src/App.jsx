@@ -14,7 +14,7 @@ function App() {
         gl={{ localClippingEnabled: true }}
         camera={{ fov: 75, position: [0, 0, 7] }}
         eventSource={document.getElementById("root")}
-        eventPrefix="client"
+        eventPrefix="client" 
       >
         <OrbitControls
           enablePan={false}
