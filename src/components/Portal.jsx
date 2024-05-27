@@ -69,7 +69,22 @@ function Portal({ width = 6, height = 10, children, ...props }) {
             anchorY="top"
             anchorX="left"
             lineHeight={0.8}
-            position={[-2.7, 2.3, 0.01]}
+            position={[-2.7, 2.5, 0.01]}
+            onPointerOver={() => setHovered(true)}
+            onPointerOut={() => setHovered(false)}
+            onClick={() => window.open("https://portfolioxp.horumy.dev")}
+          >
+            Portfolio (Desktop Only)
+          </Text>
+          <Text
+            color="DeepPink"
+            fontSize={0.5}
+            letterSpacing={-0.015}
+            font="https://fonts.gstatic.com/s/raleway/v14/1Ptrg8zYS_SKggPNwIYqWqZPBQ.ttf"
+            anchorY="top"
+            anchorX="left"
+            lineHeight={0.8}
+            position={[-2.7, 1.9, 0.01]}
             onPointerOver={() => setHovered(true)}
             onPointerOut={() => setHovered(false)}
             onClick={() => window.open("https://github.com/horumyy")}
@@ -84,7 +99,7 @@ function Portal({ width = 6, height = 10, children, ...props }) {
             anchorY="top"
             anchorX="left"
             lineHeight={0.8}
-            position={[-2.7, 1.7, 0.01]}
+            position={[-2.7, 1.3, 0.01]}
             onPointerOver={() => setHovered(true)}
             onPointerOut={() => setHovered(false)}
             onClick={() =>
@@ -101,7 +116,7 @@ function Portal({ width = 6, height = 10, children, ...props }) {
             anchorY="top"
             anchorX="left"
             lineHeight={0.8}
-            position={[-2.7, 1.1, 0.01]}
+            position={[-2.7, 0.7, 0.01]}
             onPointerOver={() => setHovered(true)}
             onPointerOut={() => setHovered(false)}
             onClick={() => window.open("mailto:jorge@horuhe.dev")}
