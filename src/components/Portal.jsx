@@ -119,7 +119,7 @@ function Portal({ width = 6, height = 10, children, ...props }) {
             position={[-2.7, 0.7, 0.01]}
             onPointerOver={() => setHovered(true)}
             onPointerOut={() => setHovered(false)}
-            onClick={() => window.open("mailto:jorge@horuhe.dev")}
+            onClick={() => window.open("mailto:hello@horumy.dev")}
           >
             Mail
           </Text>
